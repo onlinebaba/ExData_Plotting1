@@ -3,7 +3,7 @@ library(data.table)
 Sys.setlocale()
 
 ###### Read the file into a data frame ######
-#plot4DF <- read.table("../household_power_consumption.txt", sep=";",header=TRUE, na.strings="?")
+plot4DF <- read.table("../household_power_consumption.txt", sep=";",header=TRUE, na.strings="?")
 
 ###### Cast Date column values as Date ######
 plot4DF$Date <- as.Date(plot4DF$Date,"%d/%m/%Y")
